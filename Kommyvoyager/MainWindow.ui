@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2016</width>
+    <height>2016</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Komi</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>611</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>a_Campus</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton
+{
+border: 3px solid black;
+background-color: rgb(138, 2, 46);
+border-radius:45;
+}
+
+QPushButton:hover
+{
+	background-color: rgb(170, 34, 78);
+	border: 3px solid black;
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(180, 44, 88);
+	border: 3px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>830</y>
+      <width>83</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>a_Campus</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	color: rgb(190, 190, 255);
+	background-color: rgb(75, 111, 166);
+	border: 4px solid black;
+	border-radius: 10px;
+}
+
+QPushButton:hover
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(0, 160, 117);
+	border: 3px solid black;
+}
+
+QPushButton:pressed
+{
+	color: rgb(195, 195, 195);
+	background-color: rgb(0, 130, 87);
+	border: 5px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnswer">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>608</y>
+      <width>61</width>
+      <height>157</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>a_Campus</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	background-color: rgba(75, 111, 166,0);
+	border: 0px solid black;
+}
+
+QPushButton:hover
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(33, 33, 33);
+	border: 3px solid black;
+	border-radius:10px;
+}
+
+QPushButton:pressed
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(55, 55, 55);
+	border: 3px solid black;
+	border-radius:10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEdit">
+    <property name="geometry">
+     <rect>
+      <x>404</x>
+      <y>660</y>
+      <width>90</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>a_Campus</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton
+{
+border: 3px solid black;
+background-color: rgb(138, 2, 46);
+border-radius:45;
+}
+
+QPushButton:hover
+{
+	background-color: rgb(170, 34, 78);
+	border: 3px solid black;
+}
+
+QPushButton:pressed
+{
+	background-color: rgb(180, 44, 88);
+	border: 3px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="rootText">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>850</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>24</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit
+{
+font: 75 24pt &quot;MS Serif&quot;;
+	color: rgb(190, 190, 255);
+	background-color: rgb(75, 111, 166);
+	border: 4px solid black;
+	border-radius: 10px;
+}
+
+QTextEdit:hover
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(0, 160, 117);
+	border: 3px solid black;
+}
+
+
+</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhMultiLine</set>
+    </property>
+    <property name="documentTitle">
+     <string/>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Serif'; font-size:24pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'a_Campus'; font-size:26pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="acceptRichText">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="lengthText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>590</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>28</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border:0px;
+font: 75 28pt &quot;MS Serif&quot;;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhMultiLine</set>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Serif'; font-size:28pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="put">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>490</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>20</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0 , 0, 0);
+border:1px;
+font: 75 20pt &quot;MS Serif&quot;;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhMultiLine</set>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Serif'; font-size:20pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>521</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="grid"/>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>640</width>
+      <height>1024</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Files/fon1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Files/fon1.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="white">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>820</y>
+      <width>113</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(237, 234, 234);
+border: 0px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>760</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>Рассчитать</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>780</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>путь</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>900</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>Стартовая </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>920</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>точка</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>520</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>Маршрут</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>650</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>Длина</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>670</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;MS Serif&quot;;
+color: rgb(26, 23, 27);</string>
+    </property>
+    <property name="text">
+     <string>маршрута</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnswerr">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>660</y>
+      <width>154</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>a_Campus</family>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+	background-color: rgba(75, 111, 166,0);
+	border: 0px solid black;
+}
+
+QPushButton:hover
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(33, 33, 33);
+	border: 3px solid black;
+	border-radius:10px;
+}
+
+QPushButton:pressed
+{
+	color: rgb(225, 225, 225);
+	background-color: rgb(55, 55, 55);
+	border: 3px solid black;
+	border-radius:10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>btnAdd</zorder>
+   <zorder>btnDelete</zorder>
+   <zorder>btnAnswer</zorder>
+   <zorder>btnEdit</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>white</zorder>
+   <zorder>lengthText</zorder>
+   <zorder>label</zorder>
+   <zorder>rootText</zorder>
+   <zorder>put</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>btnAnswerr</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
