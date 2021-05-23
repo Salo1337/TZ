@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1330</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/backgroundzoom/background_zoom.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="alg">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>220</y>
+      <width>67</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Serif&quot;;
+background-image: url(:/icon2.png);
+background-color: rgba(255, 255, 255, 70);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="trig">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>90</y>
+      <width>67</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Serif&quot;;
+background-color: rgba(255, 255, 255, 70);
+background-image: url(:/icon1.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exp">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>280</y>
+      <width>65</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Serif&quot;;
+background-color: rgba(255, 255, 255, 70);
+background-image: url(:/icon.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fon">
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>-110</y>
+      <width>1400</width>
+      <height>980</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/fon.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fon.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clock">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>-96</y>
+      <width>421</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid rgba(105, 255, 180,0);
+border-radius:91px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="white">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>5</y>
+      <width>190</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid rgb(105, 255, 180);
+border-radius:90px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>591</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pixel.jpg);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="pixel.qrc">:/pixel.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>340</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 11pt &quot;MS Serif&quot;;
+border: 1px solid rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>UNARY</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>140</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 11pt &quot;MS Serif&quot;;
+border: 1px solid rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>CONVERT</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>280</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 11pt &quot;MS Serif&quot;;
+border: 1px solid rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>BINARY</string>
+    </property>
+   </widget>
+   <zorder>fon</zorder>
+   <zorder>white</zorder>
+   <zorder>clock</zorder>
+   <zorder>menu</zorder>
+   <zorder>exp</zorder>
+   <zorder>trig</zorder>
+   <zorder>alg</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>lineEdit_3</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="pixel.qrc"/>
+ </resources>
+ <connections/>
+</ui>
